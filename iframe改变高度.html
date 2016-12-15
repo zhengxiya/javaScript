@@ -18,6 +18,7 @@
         changeHeight();
         function changeHeight(){
             setTimeout(function(){  //必须加一个延迟，不然高度改变会和页面加载冲突，事先不了高度变化
+                // 此方法兼容性差可以有更好的兼容性写法
                 oIframe.height=oIframe.contentWindow.document.body.offsetHeight;
             },100);
         }
